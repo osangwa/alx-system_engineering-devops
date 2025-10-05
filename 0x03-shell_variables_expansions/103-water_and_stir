@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((36#$WATER + 36#$STIR)) | tr -d ' ' | tr '0-9a-z' 'a-za-z' | rev
+echo $WATER$STIR | tr 'ewatr.ist' 'shtbeolhc' | rev
