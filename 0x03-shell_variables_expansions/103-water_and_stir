@@ -1,2 +1,2 @@
 #!/bin/bash
-{ echo $(($(echo $WATER|tr water 01234)+$(echo $STIR|tr stir. 01234)))|xargs printf %o|tr 01234567 bestchol|rev; echo; }
+echo $(echo $(($(echo $WATER|tr water 01234)+$(echo $STIR|tr stir. 01234)))|xargs printf %o|tr 01234567 bestchol|rev)
