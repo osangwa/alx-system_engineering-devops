@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $WATER$STIR | tr 'ewatr.ist' 'shtbeolhc' | rev
+n=$(($(echo $WATER|tr water 01234)+$(echo $STIR|tr stir. 01234))); result=""; while [ $n -gt 0 ]; do r=$((n%8)); result=$(echo bestchol | cut -c$((r+1)))$result; n=$((n/8)); done; echo ${result:-b}
